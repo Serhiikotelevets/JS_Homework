@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Examples</title>
+</head>
+<body>
+
+<h1>У цьому прикладі демонструються такі способи використання JavaScript:</h1>
+
+<ol>
+    <li>Вставка скрипта безпосередньо в HTML.</li>
+    <li>Підключення зовнішнього скрипту.</li>
+    <li>Виклик функції при завантаженні сторінки.</li>
+    <li>Робота з об'єктом document.</li>
+    <li>Робота з подіями.</li>
+    <li>Виклик функції через setTimeout.</li>
+    <li>Робота з об'єктом Date.</li>
+    <li>Робота з об'єктом Math.
+    </li>
+    <li>Використання умовного оператора.</li>
+    <li>Використання циклу.</li>
+</ol>
+
+<!-- Вставка скрипта безпосередньо в HTML -->
+<script>
+    console.log("Hello, world!");
+</script>
+
+<!-- Підключення зовнішнього скрипту -->
+<script src="script.js"></script>
+
+<!-- Виклик функції при завантаженні сторінки -->
+<script>
+    window.onload = function() {
+        alert("Page loaded!");
+    };
+</script>
+
+<!-- Робота з об'єктом document -->
+<button onclick="document.getElementById('demo').innerHTML = Date()">Click me</button>
+<p id="demo"></p>
+
+<!-- Робота з подіями -->
+<button onclick="alert('Button clicked')">Click me</button>
+
+<!-- Виклик функції через setTimeout -->
+<script>
+    function delayedAlert() {
+        setTimeout(function() {
+            alert("Delayed alert");
+        }, 3000);
+    }
+</script>
+<button onclick="delayedAlert()">Click me</button>
+
+<!-- Робота з об'єктом Date -->
+<p id="date"></p>
+<script>
+    document.getElementById("date").innerHTML = Date();
+</script>
+
+<!-- Робота з об'єктом Math -->
+<p id="math"></p>
+<script>
+    var x = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("math").innerHTML = "Random number: " + x;
+</script>
+
+<!-- Використання умовного оператора -->
+<script>
+    var age = 18;
+    if (age >= 18) {
+        alert("You are an adult");
+    } else {
+        alert("You are a minor");
+    }
+</script>
+
+<!-- Використання циклу -->
+<ul id="list"></ul>
+<script>
+    var fruits = ["Apple", "Banana", "Orange"];
+    for (var i = 0; i < fruits.length; i++) {
+        document.getElementById("list").innerHTML += "<li>" + fruits[i] + "</li>";
+    }
+</script>
+
+</body>
+</html>

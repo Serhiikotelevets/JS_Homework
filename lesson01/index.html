@@ -4,13 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Основи JavaScript</title>
+    <style>
+        body{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .item {
+            padding: 20px;
+            margin: 0 0 20px;
+            border: 1px solid;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Згадую як працює гіт і роблю тестовий commit</h1>
+<div class="wrapper">
+    <section class="hero">
+        <h1>Максимум</h1>
+        <div class="item">
+            <h3>Введіть радіус кола</h3>
+            <input class="inp1" type="text" placeholder="Радіус кола">
+            <button class="btn1">Порахувати</button>
+            <h4>Площа кола: <span class="out1"></span></h4>
+        </div>
+        <div class="item">
+            <h3>Відстань в кілометрах між двома містами</h3>
+            <input class="inp2" type="text" placeholder="Відстань">
+            <input class="inp2_2" type="text" placeholder="Час">
+            <button class="btn2">Порахувати</button>
+            <h4>Швидкість, з якою необхідно рухатися: <span class="out2"></span></h4>
+        </div>
+        <div class="item">
+            <h3>USD to EUR</h3>
+            <input class="inp3" type="text" placeholder="Доллари">
 
-    <script src="./js/main.js"></script>
+            <button class="btn3">Порахувати</button>
+            <h4>Ви отримаєте: <span class="out3"></span>EUR</h4>
+        </div>
+    </section>
+    <section class="Medium">
+        <h2>Норма</h2>
+        <div class="item">
+            <h3>Запитай ім’я</h3>
+            <input class="inp4" type="text" placeholder="Введіть ваше ім’я">
+            <button class="btn4">Магічна кнопка</button>
+            <h4>Привіт, <span class="out4"></span></h4>
+        </div>
+        <div class="item">
+            <h3>Запитай рік народження</h3>
+            <input class="inp5" type="text" placeholder="Введіть ваш рік народження">
+            <button class="btn5">Магічна кнопка</button>
+            <h4>Ваш вік, <span class="out5"></span></h4>
+        </div>
+        <div class="item">
+            <h3>Запитай довжину сторони квадрата</h3>
+            <input class="inp6" type="text" placeholder="Введіть ваш рік народження">
+            <button class="btn6">Порахувати</button>
+            <h4>периметр: <span class="out6"></span></h4>
+        </div>
+    </section>
+    <section class="Min">
+        <h2>Мінімум</h2>
+        <h3>Завдання 1</h3>
+        <h5><a href="./task_min.html" target="_blank">Створити HTML-файл....</a> </h5>
+            <h3>Завдання 2</h3>
+        <p>
+            Тобі потрібно зберігати ім’я та прізвище в змінній, придумай до 4-х імен змінних, що потрібні тобі для даної задачі. Також напиши до 5 неправильних імен (неправильні імена повинні бути закоментовані);
+        </p>
+        <h3>Завдання 3</h3>
+        <p>
+            Вкажи всі можливі способи коментування коду;
+        </p>
+        <h3>Завдання 4</h3>
+        <p>
+            Які стилі написання імен змінних ти знаєш?
+        </p>
+    </section>
+</div>
+
+<script src="./js/main.js"></script>
 </body>
 
 </html>
