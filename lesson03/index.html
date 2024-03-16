@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Цикли й умови</title>
+    <style>
+        body{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .item {
+            padding: 20px;
+            margin: 0 0 20px;
+            border: 1px solid;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <section class="hero">
+        <h1>Мінімум</h1>
+        <div class="item">
+            <h3>✅1. Вік</h3>
+            <input class="inp1" type="text" placeholder="Введіть ваш вік">
+            <button class="btn1">Магічна кнопка</button>
+            <h4>Вивід: <span class="out1"></span></h4>
+        </div>
+        <div class="item">
+            <h3>✅2. Число від 0 до 9</h3>
+            <input class="inp2" type="text" placeholder="Введіть число від 0 до 9">
+            <button class="btn2">Магічна кнопка</button>
+            <h4>Вивід: <span class="out2"></span></h4>
+        </div>
+        <div class="item">
+            <h3>✅ 3. Сума всіх чисел в заданому користувачем діапазоні</h3>
+            <input class="inp3-1" type="text" placeholder="Введіть початкове число">
+            <input class="inp3-2" type="text" placeholder="Введіть кінцеве число">
+            <button class="btn3">Магічна кнопка</button>
+            <h4>Вивід: <span class="out3"></span></h4>
+        </div>
+        <div class="item">
+            <h3>✅ 4. Два числа і найбільший спільний дільник</h3>
+            <input class="inp4-1" type="text" placeholder="Введіть перше число">
+            <input class="inp4-2" type="text" placeholder="Введіть друге число">
+            <button class="btn4">Магічна кнопка</button>
+            <h4>Вивід: <span class="out4"></span></h4>
+        </div>
+        <div class="item">
+            <h3>✅ 5. Число і всі дільники цього числа</h3>
+            <input class="inp5" type="text" placeholder="Введіть число">
+            <button class="btn5">Магічна кнопка</button>
+            <h4>Вивід: <span class="out5"></span></h4>
+        </div>
+    </section>
+    <section class="Medium">
+        <h1>Норма</h1>
+        <div class="item">
+            <h3>✅6. Паліндром</h3>
+            <input class="inp6" type="text" placeholder="Введіть п’ятирозрядне число">
+            <button class="btn6">Магічна кнопка</button>
+            <h4>Вивід: <span class="out6"></span></h4>
+        </div>
+        <div class="item">
+            <h3>✅7. Сума до оплати зі знижкою</h3>
+            <input class="inp7" type="text" placeholder="Введіть суму покупки">
+            <button class="btn7">Магічна кнопка</button>
+            <h4>Вивід: <span class="out7"></span></h4>
+        </div>
+        <div class="item">
+            <h3>✅8. 10 чисел</h3>
+            <input class="inp8" type="text" placeholder="Введіть 10 чисел через пробіл:">
+            <button class="btn8">Магічна кнопка</button>
+            <h4>Вивід: <span class="out8"></span></h4>
+        </div>
+        <div class="item">
+            <h3>✅9. День тижня</h3>
+            <button class="btn9">Хочеш побачити наступний день? </button>
+            <h4>Вивід: в діалоговому вікні <span class="out9"></span></h4>
+        </div>
+    </section>
+    <section class="min">
+        <h1>Максимум</h1>
+
+        <div class="item">
+            <h3>✅10. Гра «Вгадай число»</h3>
+            <p id="question">Загадайте число від 0 до 100 а я спробую вгадати</p>
+            <button id="higher">Більше</button>
+            <button id="equal">Вгадав</button>
+            <button id="lower">Менше</button>
+            <h4>Ваше число : <span class="out10"></span></h4>
+        </div>
+        <div class="item">
+            <h3>✅11. Виведи таблицю множення</h3>
+            <p id="question">Рішення в консолі</p>
+        </div>
+        <div class="item">
+            <h3>✅12. Запитай дату</h3>
+            <p id="question">Рішення в консолі</p>
+        </div>
+    </section>
+</div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
