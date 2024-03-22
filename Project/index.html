@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>One Call API</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img class="logo" src="./img/logo2.png" alt="logo" width="50">
+            <!-- <h4>Фанклуб Миколиної погоди</h4> -->
+            <div class="input-wrap">
+                <input class="input" type="text" id="cityInput" placeholder="Введіть назву міста">
+                <button class="btn" id="submitCity">Показати погоду</button>
+            </div>
+        </header>
+        <section class="hero">
+
+            <div id="currentWeather"></div>
+            <div id="weather-info">
+                <h2 class="title">Прогноз погоди в <span class="outCityName"></span>: </h2>
+            </div>
+
+            <div class="out1">
+            </div>
+            <div id="forecast-container" class="forecast-container">
+
+            </div>
+        </section>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
